@@ -27,6 +27,7 @@ feature "User visits a specific vending machine page" do
 
     visit machine_path(machine)
 
-    expect(page).to have_content("Average Price: ")
+    expect(page).to have_content("Average Price of Snacks: ")
+    expect(page).to have_content("$4.")
   end
 end
